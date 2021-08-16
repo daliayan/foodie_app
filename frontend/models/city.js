@@ -1,7 +1,5 @@
-// RENDERING - LOGIC - FILTERING 
-
 class City {
-
+    static container = document.getElementById('city-list');
     constructor({id, name, restaurants}){
         this.name = name;
         this.id = id;
@@ -13,7 +11,6 @@ class City {
     };
 
     getCity() {
-        const cityList = document.getElementById('city-list');
         const cityDiv = document.createElement('div');
 
         cityDiv.classList.add('city-list');
@@ -22,11 +19,13 @@ class City {
         // cityName.innerText = this.name;
 
         const cityInfo = this.getCityInfo();
-        const restaurants = this.getCityRestaurants;
-
+        
+        const restaurants = this.getCityRestaurants();
+        // debugger
         cityDiv.appendChild(cityInfo);
-        cityList.appendChild(restaurants);
-        City.container.appendChild(cityList);
+        // cityList.appendChild(restaurants);
+        // City.container.appendChild(restaurants);
+
 
     };
 
@@ -40,17 +39,17 @@ class City {
         return cityData;
     }
 
-    // getCityRestaurants(){
-    //     const restaurantUl = document.createElement('li');
-    //     restaurantUl.classList.add('restaurants');
+    getCityRestaurants(){
+        const restaurantUl = document.createElement('li');
+        restaurantUl.classList.add('restaurants');
+        this.restaurants.forEach(restaurant => {
+            const newRestaurant = new Restaurant(restaurant);
 
-    //     this.restaurants.forEach(restaurant => {
-    //         const newRestaurant = new Restaurant(this.restaurant);
-    //         const li = newRestaurant.getRestaurant();
-    //         restaurantUl.appendChild(li);
-    //     });
-    //     return restaurantUl;
-    // };
+            const li = newRestaurant.getRestaurant();
+            restaurantUl.appendChild(li);
+        });
+        return restaurantUl;
+    };
 
     // getRestaurantForm(){
 

@@ -7,15 +7,11 @@ class RestaurantApi {
     getRestaurants(){
         fetch(this.baseURL)
         .then(resp => resp.json())
-        // .then(json => json.forEach(restObj => {
-        //     Restaurant.findOrCreateBy(restObj)
-        // }))
-        .then(restaurants => 
-            console.log(restaurants))
-    }
-    // fetch requests of API from Rails backend
-    // .then (resp => resp.json())
-    // . then
+        .then(json => json.forEach(restObj => {
+            let res = new Restaurant(restObj)
+            res.getCityRestaurants();
+            })  
+    )};
 
 
     deleteRestaurant(id){

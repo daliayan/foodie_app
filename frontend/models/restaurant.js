@@ -1,4 +1,3 @@
-// RENDERING - LOGIC - FILTERING 
 const restaurantApi = new RestaurantApi('http://localhost:3000/restaurants');
 
 class Restaurant {
