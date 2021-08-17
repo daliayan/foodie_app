@@ -8,7 +8,7 @@ class RestaurantApi {
         fetch(this.baseURL)
         .then(resp => resp.json())
         .then(json => json.forEach(restObj => {
-            let res = new Restaurant(restObj)
+            const res = new Restaurant(restObj)
             res.getCityRestaurants();
             })  
     )};
