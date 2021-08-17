@@ -33,5 +33,4 @@ class Restaurant {
     static findByName(name){
         return this.all.find(function(restaurant) {restaurant.name === name})
     }
-
 }

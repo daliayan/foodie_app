@@ -12,5 +12,4 @@ class CityApi {
                 cit.getCity();
             })
         )};
-
 };
