@@ -14,9 +14,11 @@ class City {
         const cityInfo = this.getCityInfo();
         
         const restaurants = this.getCityRestaurants();
-
+            // debugger
         cityDiv.appendChild(cityInfo);
-        cityList.appendChild(cityDiv)
+        cityList.appendChild(cityDiv);
+        cityList.appendChild(restaurants);
+        
     };
 
     getCityInfo(){
@@ -24,8 +26,6 @@ class City {
 
         cityData.innerHTML = `
         <h1 style="font-size: 25px"> ${this.name}</h1>
-        <p style="font-size: 20px"> ${this.id}</p>
-        <p style="font-size: 20px">Restaurants: ${this.restaurants}<p>
         `; 
         return cityData;
     }
@@ -38,6 +38,7 @@ class City {
             const newRestaurant = new Restaurant(restaurant); // destructuring
 
             const li = newRestaurant.getRestaurant();
+            // debugger
             restaurantUl.appendChild(li);
         });
         return restaurantUl;
