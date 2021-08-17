@@ -1,11 +1,13 @@
 html {
-    background: linear-gradient(200deg, rgb(220, 223, 180), rgb(214, 139, 202));
+    background: linear-gradient(200deg, rgb(214, 244, 245), rgb(109, 119, 255));
     background-attachment: fixed;
     height: 100%;
     min-height: 100%;
 }
 
 body {
+	display: block;
+    justify-content: center;
     padding: 0rem 1rem;
   }
 
