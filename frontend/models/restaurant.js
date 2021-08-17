@@ -30,7 +30,7 @@ class Restaurant {
          return li;
      };
 
-    static findByName(name){
-        return this.all.find(function(restaurant) {restaurant.name === name})
-    }
+    // static findByName(name){
+    //     return this.all.find(function(restaurant) {restaurant.name === name})
+    // }
 }

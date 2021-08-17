@@ -5,7 +5,6 @@ class City {
         this.id = id;
         this.restaurants = restaurants;
         
-        
          // New elements to add to the array.
         // Appends new elements to the end of an array, and returns the new length of the array.
     };
@@ -38,8 +37,9 @@ class City {
     }
 
     getCityRestaurants(){
-        const restaurantUl = document.createElement('li');
+        const restaurantUl = document.createElement('ul');
         restaurantUl.classList.add('restaurants');
+        
         this.restaurants.forEach(restaurant => {
             const newRestaurant = new Restaurant(restaurant);
 

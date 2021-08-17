@@ -7,11 +7,11 @@ class RestaurantApi {
     getRestaurants(){
         fetch(this.baseURL)
         .then(resp => resp.json())
-        .then(json => json.forEach(restObj => {
-            const res = new Restaurant(restObj)
-            res.getCityRestaurants();
+        .then(restObj => {
+            let rest = new Restaurant(restObj)
+            rest.getCityRestaurants();
             })  
-    )};
+    };
 
 
     deleteRestaurant(id){
