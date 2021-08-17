@@ -4,17 +4,17 @@ class RestaurantApi {
         this.baseURL = baseURL;
     };
 
-    createRestaurants(){
-        fetch(this.baseURL)
-        .then(resp => resp.json())
-        .then(restObj => {
-            let rest = new City(restObj)
-            rest.getCityRestaurants();
-            })  
-    };
+    // createRestaurants(){
+    //     fetch(this.baseURL)
+    //     .then(resp => resp.json())
+    //     .then(restObj => {
+    //         let rest = new City(restObj)
+    //         rest.getCityRestaurants();
+    //         })  
+    // };
 
 
-    createRestaurant(city_id){
+    // createRestaurant(city_id){
         // const restaurantInfo = {
         //     restaurant: {
         //         name: this.city_id.value,
@@ -24,17 +24,17 @@ class RestaurantApi {
         //     }
         // }
         // console.log(restaurantInfo);
-        const restaurantInfo = this.getCityInfo
-    }
+    //     const restaurantInfo = this.getCityInfo
+    // }
 
 
-    deleteRestaurant(id){
-        const config = {
-            method: 'DELETE'  
-        };
+    // deleteRestaurant(id){
+    //     const config = {
+    //         method: 'DELETE'  
+    //     };
 
-        fetch(`${this.baseURL}/${id}`, config)
-        .then(resp => resp.json())
-        .then(info => console.log(info.message))
-    };
+    //     fetch(`${this.baseURL}/${id}`, config)
+    //     .then(resp => resp.json())
+    //     .then(info => console.log(info.message))
+    // };
 };
