@@ -21,16 +21,11 @@ class Restaurant {
          deleteRes.innerText = 'x';
 
          deleteRes.addEventListener('click', () => {
-             RestaurantApi.deleteRes(this.id);
-                li.remove();
+             restaurantApi.deleteRestaurant(this.id);
          });
 
          li.appendChild(deleteRes);
 
          return li;
      };
-
-    // static findByName(name){
-    //     return this.all.find(function(restaurant) {restaurant.name === name})
-    // }
 }

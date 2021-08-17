@@ -1,5 +1,5 @@
 class City {
-    static container = document.getElementById('city-list');
+
     constructor({id, name, restaurants}){
         this.name = name;
         this.id = id;
@@ -7,19 +7,16 @@ class City {
     };
 
     getCity() {
+        const cityList = document.getElementById('city-list');
         const cityDiv = document.createElement('div');
-
         cityDiv.classList.add('city-list');
-
-        // const cityName = document.createElement('h1');
-        // cityName.innerText = this.name;
 
         const cityInfo = this.getCityInfo();
         
         const restaurants = this.getCityRestaurants();
+
         cityDiv.appendChild(cityInfo);
-        // cityList.appendChild(restaurants);
-        // City.container.appendChild(restaurants);
+        cityList.appendChild(cityDiv)
     };
 
     getCityInfo(){
@@ -37,7 +34,7 @@ class City {
         restaurantUl.classList.add('restaurants');
         
         this.restaurants.forEach(restaurant => {
-            const newRestaurant = new Restaurant(restaurant);
+            const newRestaurant = new Restaurant(restaurant); // destructuring
 
             const li = newRestaurant.getRestaurant();
             restaurantUl.appendChild(li);

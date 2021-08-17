@@ -4,15 +4,6 @@ class RestaurantApi {
         this.baseURL = baseURL;
     };
 
-    getRestaurants(){
-        fetch(this.baseURL)
-        .then(resp => resp.json())
-        .then(restObj => {
-            let rest = new Restaurant(restObj)
-            rest.getCityRestaurants();
-            })  
-    };
-
 
     deleteRestaurant(id){
         const config = {
