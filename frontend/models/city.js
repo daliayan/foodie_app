@@ -12,9 +12,8 @@ class City {
         cityDiv.classList.add('city-list');
 
         const cityInfo = this.getCityInfo();
-        
         const restaurants = this.getCityRestaurants();
-            // debugger
+    
         cityDiv.appendChild(cityInfo);
         cityList.appendChild(cityDiv);
         cityList.appendChild(restaurants);
@@ -38,7 +37,6 @@ class City {
             const newRestaurant = new Restaurant(restaurant); // destructuring
 
             const li = newRestaurant.getRestaurant();
-            // debugger
             restaurantUl.appendChild(li);
         });
         return restaurantUl;

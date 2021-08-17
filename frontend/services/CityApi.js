@@ -9,7 +9,6 @@ class CityApi {
         .then(resp => resp.json())
         .then(json => json.forEach(cityObj => {
                 const cit = new City(cityObj)
-                // debugger
                 cit.getCity();
             })
         )};
