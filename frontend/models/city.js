@@ -23,8 +23,9 @@ class City {
         const cityData = document.createElement('div');
 
         cityData.innerHTML = `
-        <h1> ${this.name}</h1>
-        <p>Restaurants: ${this.restaurants}<p>
+        <h1 style="font-size: 25px"> ${this.name}</h1>
+        <p style="font-size: 20px"> ${this.id}</p>
+        <p style="font-size: 20px">Restaurants: ${this.restaurants}<p>
         `; 
         return cityData;
     }

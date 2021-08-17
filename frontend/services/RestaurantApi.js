@@ -4,6 +4,16 @@ class RestaurantApi {
         this.baseURL = baseURL;
     };
 
+    createRestaurants(){
+        fetch(this.baseURL)
+        .then(resp => resp.json())
+        .then(restObj => {
+            let rest = new City(restObj)
+            rest.getCityRestaurants();
+            })  
+    };
+
+
     createRestaurant(city_id){
         // const restaurantInfo = {
         //     restaurant: {
