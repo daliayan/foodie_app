@@ -1,6 +1,5 @@
 html {
     background: linear-gradient(200deg, rgb(220, 223, 180), rgb(214, 139, 202));
-    background-size: 600% 600%;
     background-attachment: fixed;
     height: 100%;
     min-height: 100%;
@@ -10,8 +9,8 @@ body {
     padding: 0rem 1rem;
   }
 
-#header{
-	height:100px;
+#main{
+	height:2500px;
 	background-color:#f3eabc;
 	margin:0;
 	padding:0;
