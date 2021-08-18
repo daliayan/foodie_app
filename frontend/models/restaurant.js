@@ -34,10 +34,6 @@ class Restaurant {
          return li;
      };
 
-     renderRestaurant(){
-         
-     }
-
     //  handleDelete(){
     //      this.remove();
     //      restaurantApi.deleteRestaurant(this.dataset.id);
