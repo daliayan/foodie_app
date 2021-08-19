@@ -19,13 +19,13 @@
       <h3 style="font-family: 'Brush Script MT', cursive;">Add New Restaurant</h3>
       <form id="restaurant-form">
 
-        <input type="text" name="name" id="restaurant-name" placeholder="Name"></input>
+        <input type="text" name="name" id="restaurant-name" placeholder="Name" required></input>
+        <!-- <br><br> -->
+        <input type="text" name="nationality" id="restaurant-nationality" placeholder="Nationality" required></input>
         <br><br>
-        <input type="text" name="nationality" id="restaurant-nationality" placeholder="Nationality"></input>
-        <br><br>
-        <input type="integer" name="rating" id="restaurant-rating" min="1" max="10" placeholder="Rating"></input>
-        <br>
-        <br>
+        <input type="integer" name="rating" id="restaurant-rating" min="1" max="10" placeholder="Rating 1-10" required></input>
+        <!-- <br>
+        <br> -->
 
           <select id="cityRestaurant">
             <option value="1">New York City</option>

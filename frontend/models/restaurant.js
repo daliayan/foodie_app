@@ -27,7 +27,7 @@ class Restaurant {
          });
 
          restaurantLi.appendChild(deleteRes);
-
+         // Need to append newres element to li in restaurantapi/restaurant
          return restaurantLi;
      };
 
