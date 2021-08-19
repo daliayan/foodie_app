@@ -1,11 +1,13 @@
 class City {
 
+    // constructing my city data
     constructor({id, name, restaurants}){
         this.name = name;
         this.id = id;
         this.restaurants = restaurants;
     };
 
+    // gettign city data and setting up information
     getCity() {
         const cityList = document.getElementById('city-list');
         const cityDiv = document.createElement('div');
@@ -20,6 +22,7 @@ class City {
         
     };
 
+    // formatting my city data to be displayed
     getCityInfo(){
         const cityData = document.createElement('div');
 
@@ -29,6 +32,7 @@ class City {
         return cityData;
     }
 
+    // extracting the restaurant data to display beneath my city data
     getCityRestaurants(){
         const restaurantUl = document.createElement('ul');
         restaurantUl.classList.add('restaurants');

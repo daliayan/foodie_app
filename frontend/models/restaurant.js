@@ -2,6 +2,7 @@ const restaurantApi = new RestaurantApi('http://localhost:3000/restaurants');
 
 class Restaurant {
 
+    //constructing my restaurant data
     constructor({id, name, nationality, rating, city_id}){
         this.id = id;
         this.name = name;
@@ -10,6 +11,7 @@ class Restaurant {
         this.cityId = city_id;
     };
     
+    // getting the restaurant data from CityApi
      getRestaurant(){
          const li = document.createElement('li');
          const deleteRes = document.createElement('button');
