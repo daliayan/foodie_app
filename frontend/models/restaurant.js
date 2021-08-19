@@ -15,7 +15,6 @@ class Restaurant {
          const deleteRes = document.createElement('button');
 
          li.innerText = this.name;
-        
 
          deleteRes.classList.add('delete-btn');
          deleteRes.innerText = 'x';

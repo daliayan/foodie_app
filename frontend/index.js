@@ -13,9 +13,9 @@ form.addEventListener('submit', submitForm)
 function submitForm(eve){
     eve.preventDefault();
     debugger
-    // const formData = {
-    //     name: nameInput.value, 
-    //     price: priceInput.value, 
-    //     description: descriptionInput.value, 
-    // }
+    const formData = {
+        name: restaurantName.value, 
+        price: restaurantNationality.value, 
+        description: restaurantRating.value, 
+    }
 }
