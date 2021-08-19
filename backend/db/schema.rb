@@ -48,7 +48,6 @@ ActiveRecord::Schema.define(version: 2021_08_05_013512) do
     t.string "name"
     t.string "nationality"
     t.integer "rating"
-    t.string "avatar"
     t.integer "city_id", null: false
     t.index ["city_id"], name: "index_restaurants_on_city_id"
   end
