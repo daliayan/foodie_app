@@ -8,7 +8,6 @@ class RestaurantApi {
     deleteRestaurant(id){
         const config = {
             method: 'DELETE',
-              
         };
 
         fetch(`${this.baseURL}/${id}`, config)
@@ -24,7 +23,7 @@ class RestaurantApi {
         const restaurantName = document.getElementById('restaurant-name')
         const restaurantNationality = document.getElementById('restaurant-nationality')
         const restaurantRating = document.getElementById('restaurant-rating')
-        document.getElementById("cityRestaurant")
+        const selectCityDropdown = document.getElementById("cityRestaurant")
     
     // making a params hash to dictate the info the user can submit
     // object with key value pairs
@@ -32,7 +31,7 @@ class RestaurantApi {
         name: restaurantName.value, 
         nationality: restaurantNationality.value, 
         rating: restaurantRating.value, 
-        city_id: 1
+        city_id: selectCityDropdown.value,
     }
     // my config obj makes it easier to extract change data info
     const configObj = {
