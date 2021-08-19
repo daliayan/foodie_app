@@ -7,11 +7,49 @@ class RestaurantApi {
     //deleting restuarant function
     deleteRestaurant(id){
         const config = {
-            method: 'DELETE'  
+            method: 'DELETE',
+              
         };
 
         fetch(`${this.baseURL}/${id}`, config)
         .then(resp => resp.json())
-        .then(info => console.log(info.message))
+        .then(json => alert(json.message))
+
+        //console.log(info.message)
     };
-};
+
+    submitForm(event){
+        // debugger
+        event.preventDefault();
+        console.log("form submitted")
+            // debugger
+        const restaurantName = document.getElementById('restaurant-name')
+        const restaurantNationality = document.getElementById('restaurant-nationality')
+        const restaurantRating = document.getElementById('restaurant-rating')
+        document.getElementById("cityRestaurant")
+    
+    // making a params hash to dictate the info the user can submit
+    // object with key value pairs
+    const formData = {
+        name: restaurantName.value, 
+        nationality: restaurantNationality.value, 
+        rating: restaurantRating.value, 
+        city_id: 1
+    }
+    // debugger
+    // my config obj makes it easier to extract change data info
+    const configObj = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    }
+
+    
+    fetch(this.baseURL, configObj)
+    .then(resp => resp.json())
+    .then(json => getRestaurant(json.data))
+    };
+}

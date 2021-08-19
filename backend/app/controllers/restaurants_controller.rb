@@ -8,14 +8,15 @@ class RestaurantsController < ApplicationController
     end
 
     def show
-        render json: restaurant
+        render json: @restaurant
     end
 
     #Not new because I'm not working with views
 
     def create
+        # binding.pry
         restaurant = Restaurant.create(restaurant_params)
-
+        # binding.pry
         if restaurant.save
             render json: restaurant
         else
@@ -24,18 +25,18 @@ class RestaurantsController < ApplicationController
     end
 
     def destroy
-        restaurant.destroy
-        render json: {message: "Successfully Deleted #{restaurant.name}"}
+        @restaurant.destroy
+        render json: {message: "Successfully Deleted #{@restaurant.name}"}
     end
 
     private
 
     def made_restaurant
-        restaurant = Restaurant.find(params[:id])
+        @restaurant = Restaurant.find(params[:id])
     end
 
     def restaurant_params
-        params.require(:restaurant).permit(:name, :review, :star, :price)
+        params.permit(:name, :nationality, :rating, :city_id)
     end
 
 end
