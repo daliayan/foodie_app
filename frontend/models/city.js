@@ -27,7 +27,7 @@ class City {
         const cityData = document.createElement('div');
 
         cityData.innerHTML = `
-        <h1 style="font-size: 25px"> ${this.name}</h1>
+        <h1 style="font-size: 25px; font-family: 'Brush Script MT', cursive;"> ${this.name}</h1>
         `; 
         return cityData;
     }

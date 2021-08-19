@@ -48,6 +48,6 @@ class RestaurantApi {
     
     fetch(this.baseURL, configObj)
     .then(resp => resp.json())
-    .then(json => getRestaurant(json.data))
+    .then(json => getRestaurant(json))
     };
 }

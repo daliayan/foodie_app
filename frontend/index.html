@@ -3,35 +3,33 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="style.css">
-         <title>Taste This City</title>
     </head>
 
   <body>
     <main>
-      <p id="welcome" style="color: rgb(11, 11, 17); text-transform: uppercase; font-size:40px;"> 
+      <p id="welcome" style="color: rgb(11, 11, 17); text-transform: uppercase; font-size:40px; font-family: 'Brush Script MT', cursive;"> 
         Taste This City </p>
 
       <article id="city-container">
-        <p style="color: rgb(12, 12, 22); font-size: 30px; text-transform: uppercase;"> Cities</p>
           <section id="city-list"> 
           </section>
       </article>
 
       <br>
-      <h3>Add New Restaurant</h3>
+      <h3 style="font-family: 'Brush Script MT', cursive;">Add New Restaurant</h3>
       <form id="restaurant-form">
 
 
-        <label for="restaurant-name">Restaurant Name:</label>
-        <input type="text" name="name" id="restaurant-name"></input>
+        <!-- <label for="restaurant-name" style="font-family: 'Brush Script MT', cursive;">Restaurant Name:</label> -->
+        <input type="text" name="name" id="restaurant-name" placeholder="Name"></input>
 
         <br><br>
-        <label for="restaurant-nationality">Restaurants Nationality</label>
-        <input type="text" name="nationality" id="restaurant-nationality"></input>
+        <!-- <label for="restaurant-nationality" style="font-family: 'Brush Script MT', cursive;">Restaurants Nationality</label> -->
+        <input type="text" name="nationality" id="restaurant-nationality" placeholder="Nationality"></input>
 
         <br><br>
-        <label for="restaurant-rating">Rating:</label>
-        <input type="integer" name="rating" id="restaurant-rating" min="1" max="10"></input>
+        <!-- <label for="restaurant-rating" style="font-family: 'Brush Script MT', cursive;">Rating:</label> -->
+        <input type="integer" name="rating" id="restaurant-rating" min="1" max="10" placeholder="Rating"></input>
 
         <br>
         <br>
