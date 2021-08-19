@@ -53,5 +53,6 @@ class RestaurantApi {
 
         newres.getRestaurant()
         });
+        // need to append li newres element to li 
     }
 }

@@ -13,22 +13,22 @@ class Restaurant {
     
     // getting the restaurant data from CityApi
      getRestaurant(){
-         const li = document.createElement('li');
+         const restaurantLi = document.createElement('li');
          const deleteRes = document.createElement('button');
 
-         li.innerText = this.name;
+         restaurantLi.innerText = this.name;
 
          deleteRes.classList.add('delete-btn');
          deleteRes.innerText = 'x';
 
          deleteRes.addEventListener('click', () => {
              restaurantApi.deleteRestaurant(this.id);
-             li.remove();
+             restaurantLi.remove();
          });
 
-         li.appendChild(deleteRes);
+         restaurantLi.appendChild(deleteRes);
 
-         return li;
+         return restaurantLi;
      };
 
 }
