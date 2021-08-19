@@ -9,10 +9,6 @@ class Restaurant {
         this.rating = rating;
         this.avatar = avatar;
         this.cityId = city_id;
-
-        // this.li = document.createElement('li');
-        // this.li.dataset.id = id;
-        // this.li.addEventListener('click', this.handleDelete);
     };
     
      getRestaurant(){
@@ -20,6 +16,7 @@ class Restaurant {
          const deleteRes = document.createElement('button');
 
          li.innerText = this.name;
+        
 
          deleteRes.classList.add('delete-btn');
          deleteRes.innerText = 'x';
@@ -34,8 +31,14 @@ class Restaurant {
          return li;
      };
 
-    //  handleDelete(){
-    //      this.remove();
-    //      restaurantApi.deleteRestaurant(this.dataset.id);
-    //  }
+     deleteRestaurant(id){
+        const config = {
+            method: 'DELETE'  
+        };
+
+        fetch(`${this.baseURL}/${id}`, config)
+        .then(resp => resp.json())
+        .then(info => console.log(info.message))
+    };
+
 }
