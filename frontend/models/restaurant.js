@@ -2,12 +2,11 @@ const restaurantApi = new RestaurantApi('http://localhost:3000/restaurants');
 
 class Restaurant {
 
-    constructor({id, name, nationality, rating, avatar, city_id}){
+    constructor({id, name, nationality, rating, city_id}){
         this.id = id;
         this.name = name;
         this.nationality = nationality;
         this.rating = rating;
-        this.avatar = avatar;
         this.cityId = city_id;
     };
     

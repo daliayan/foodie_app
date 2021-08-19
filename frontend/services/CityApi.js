@@ -10,6 +10,6 @@ class CityApi {
         .then(json => json.forEach(cityObj => {
                 const cit = new City(cityObj)
                 cit.getCity();
-            })
-        )};
+        })
+    )};
 };

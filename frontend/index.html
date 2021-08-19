@@ -17,6 +17,38 @@
           </section>
       </article>
 
+      <br>
+      <h3>Add New Restaurant</h3>
+      <form id="restaurant-form">
+
+
+        <label for="restaurant-name">Restaurant Name:</label>
+        <input type="text" name="name" id="restaurant-name"></input>
+
+        <br><br>
+        <label for="restaurant-nationality">Restaurants Nationality</label>
+        <input type="text" name="nationality" id="restaurant-nationality"></input>
+
+        <br><br>
+        <label for="restaurant-rating">Rating:</label>
+        <input type="integer" name="rating" id="restaurant-rating" min="1" max="10"></input>
+
+        <br>
+        <br>
+        <form>
+          <select id="cityRestaurant" size="4">
+            <option>New York City</option>
+            <option>Boston</option>
+            <option>Miami</option>
+            <option>Los Angeles</option>
+          </select>
+        </form>
+
+        <br><br>
+        <input type="submit" value="Create"></input>
+
+      </form>
+
 
     </main>
     <script src="services/CityApi.js" type="text/javascript"></script>

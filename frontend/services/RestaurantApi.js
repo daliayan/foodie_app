@@ -4,6 +4,7 @@ class RestaurantApi {
         this.baseURL = baseURL;
     };
 
+
     deleteRestaurant(id){
         const config = {
             method: 'DELETE'  
