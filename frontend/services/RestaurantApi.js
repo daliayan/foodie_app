@@ -4,14 +4,13 @@ class RestaurantApi {
         this.baseURL = baseURL;
     };
 
+    deleteRestaurant(id){
+        const config = {
+            method: 'DELETE'  
+        };
 
-    // deleteRestaurant(id){
-    //     const config = {
-    //         method: 'DELETE'  
-    //     };
-
-    //     fetch(`${this.baseURL}/${id}`, config)
-    //     .then(resp => resp.json())
-    //     .then(info => console.log(info.message))
-    // };
+        fetch(`${this.baseURL}/${id}`, config)
+        .then(resp => resp.json())
+        .then(info => console.log(info.message))
+    };
 };
