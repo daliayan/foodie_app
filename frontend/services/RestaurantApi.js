@@ -14,15 +14,13 @@ class RestaurantApi {
         fetch(`${this.baseURL}/${id}`, config)
         .then(resp => resp.json())
         .then(json => alert(json.message))
-
-        //console.log(info.message)
     };
 
     submitForm(event){
-        // debugger
+        
         event.preventDefault();
         console.log("form submitted")
-            // debugger
+    
         const restaurantName = document.getElementById('restaurant-name')
         const restaurantNationality = document.getElementById('restaurant-nationality')
         const restaurantRating = document.getElementById('restaurant-rating')
@@ -36,7 +34,6 @@ class RestaurantApi {
         rating: restaurantRating.value, 
         city_id: 1
     }
-    // debugger
     // my config obj makes it easier to extract change data info
     const configObj = {
         method: 'POST',

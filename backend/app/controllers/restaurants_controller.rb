@@ -14,9 +14,7 @@ class RestaurantsController < ApplicationController
     #Not new because I'm not working with views
 
     def create
-        # binding.pry
         restaurant = Restaurant.create(restaurant_params)
-        # binding.pry
         if restaurant.save
             render json: restaurant
         else

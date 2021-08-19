@@ -8,7 +8,7 @@ class City {
     };
 
     // gettign city data and setting up information
-    getCity() {
+    getCity(){
         const cityList = document.getElementById('city-list');
         const cityDiv = document.createElement('div');
         cityDiv.classList.add('city-list');
