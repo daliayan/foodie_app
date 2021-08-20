@@ -15,6 +15,7 @@ body {
 	padding-right: 40px; 
 	padding-top: 10px;
 	margin:5px;
+	border: 5px solid rgb(10, 10, 10);
 }
 
 /* Header Styling */
@@ -32,30 +33,38 @@ body {
 }
 
 /* City List Styling */
-.cityList{
-	padding: 15px; 
+.city-list{
+	padding: 10px; 
 	font-size: 25px;
-	font-family:'Brush Script MT', cursive;
+	/* font-family:'Brush Script MT', cursive; */
+	font-family: Tahoma;
+	width: 320px;
 
 }
 
 /* Restaurant List Styling */
 li {
 	list-style-type: none; /* Remove bullets */
-	margin-top: 15px;
+	margin-top: 10px;
 	margin: 5; /* Remove margins */
 	font-size: 18px;
-	font-family: "Brush Script MT", cursive;
+	font-family: Tahoma,
 }
 
 /* Styling my Buttons */
 button{
-
 	background-color: #ebecf3; 
 	text-align: center;
 	color: rgb(0, 0, 0);
 	margin: 4px 6px;
 	cursor: pointer;
+}
+
+.select-city-restaurant{
+  padding: 10px 10px;
+  border: none;
+  border-radius: 40px;
+  background-color: #f59c38;
 }
 
 /* #main{
