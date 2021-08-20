@@ -16,10 +16,6 @@ class Restaurant {
          const restaurantLi = document.createElement('li');
          const deleteRes = document.createElement('button');
 
-        //  const restaurantData = document.getElementById('restaurant-data');
-        // const restaurantDiv = document.createElement('div');
-        //  restaurantDiv.classList.add(restaurant-data);
-
          restaurantLi.innerText = this.name;
 
          deleteRes.classList.add('delete-btn');
@@ -38,5 +34,17 @@ class Restaurant {
         //  restaurantLi.appendChild(newres);
         // restaurantLi.appendChild(submitForm);
      };
+
+     // getting the values of nationality/rating for restaurant upon click
+     getRestaurantContent(){
+
+        const restaurantData = document.getElementByTagName('li');
+        const restaurantDiv = document.createElement('div');
+         
+        restaurantDiv.classList.add('li');
+        restaurantDiv.addEventListener('click', () => {
+            restaurantApi.getRestaurant(restaurantData.data);
+        });
+     }
 
 }
