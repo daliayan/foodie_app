@@ -1,6 +1,6 @@
 /* Website Background Styling */
 html {
-    background: linear-gradient(200deg, rgb(246, 241, 179), rgb(141, 139, 168));
+    background: linear-gradient(200deg, rgb(255, 221, 128), rgb(255, 255, 255));
     background-attachment: fixed;
     height: 100%;
     min-height: 100%;
@@ -22,7 +22,7 @@ body {
 .header {
 	padding: 1px;
 	text-align: center;
-	background: #fcfffe;
+	background: linear-gradient(200deg, rgb(243, 192, 125), rgb(241, 83, 55));
 	font-size: 30px;
 }
 
@@ -61,7 +61,7 @@ button{
 /* styling Create Restaurant Form as whole */
 .restaurant-form{
 	border: none;
-	background-color: #ebecf3; 
+	background-color: #d17171; 
 	text-align: center;
 	margin-top: 5px;
 }

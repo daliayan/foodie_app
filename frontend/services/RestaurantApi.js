@@ -25,35 +25,34 @@ class RestaurantApi {
         const restaurantRating = document.getElementById('restaurant-rating')
         const selectCityDropdown = document.getElementById("cityRestaurant")
     
-    // making a params hash to dictate the info the user can submit
-    // object with key value pairs
+        // making a params hash to dictate the info the user can submit
+        // object with key value pairs
     
-    const formData = {
-        name: restaurantName.value, 
-        nationality: restaurantNationality.value, 
-        rating: restaurantRating.value, 
-        city_id: selectCityDropdown.value,
-    }
+        const formData = {
+            name: restaurantName.value, 
+            nationality: restaurantNationality.value, 
+            rating: restaurantRating.value, 
+            city_id: selectCityDropdown.value,
+        }
     
-    // my config obj makes it easier to extract change data info
-    const configObj = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        },
-        body: JSON.stringify(formData)
-    }
+        // my config obj makes it easier to extract change data info
+        const configObj = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        }
 
-    
-    fetch(this.baseURL, configObj)
-    .then(resp => resp.json())
-    .then(json => {
-        const newres = new Restaurant(json)
-        newres.getRestaurant()
-        });
+        fetch(this.baseURL, configObj)
+        .then(resp => resp.json())
+        .then(json => {
+            const newres = new Restaurant(json)
+            newres.getRestaurant();
+            });
 
-        // restaurantLi.appendChild(newres);
+        // restaurantLi.appendNode(newres);
         // newres.appendChild(restaurantLi);
         // need to append li newres element to li 
         // restaurantLi.appendChild(newres);

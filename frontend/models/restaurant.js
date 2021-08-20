@@ -36,15 +36,15 @@ class Restaurant {
      };
 
      // getting the values of nationality/rating for restaurant upon click
-     getRestaurantContent(){
+    //  getRestaurantContent(){
 
-        const restaurantData = document.getElementByTagName('li');
-        const restaurantDiv = document.createElement('div');
+    //     const restaurantData = document.getElementByTagName('li');
+    //     const restaurantDiv = document.createElement('div');
          
-        restaurantDiv.classList.add('li');
-        restaurantDiv.addEventListener('click', () => {
-            restaurantApi.getRestaurant(restaurantData.data);
-        });
-     }
+    //     restaurantDiv.classList.add('li');
+    //     restaurantDiv.addEventListener('click', () => {
+    //         restaurantApi.getRestaurant(restaurantData.data);
+    //     });
+    // }
 
 }
