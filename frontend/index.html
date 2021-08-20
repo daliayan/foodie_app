@@ -7,8 +7,13 @@
 
   <body>
     <main>
-      <p id="welcome" style="color: rgb(11, 11, 17); text-transform: uppercase; font-size:40px; font-family: 'Brush Script MT', cursive;"> 
+      <div class="header">
+        <div class="img">
+        <img src="images/logo.png" alt="foodie-logo" style="width:80px;height:80px;" float: left;></img>
+        </div>
+      <p id="welcome" style="color: rgb(11, 11, 12); text-transform: uppercase; font-family: 'Brush Script MT', cursive;"> 
         Taste This City </p>
+      </div>
 
       <article id="city-container">
           <section id="city-list"> 
@@ -16,16 +21,14 @@
       </article>
 
       <br>
-      <h3 style="font-family: 'Brush Script MT', cursive;">Add New Restaurant</h3>
       <form id="restaurant-form">
+        <h3 style="font-family: 'Brush Script MT', cursive;">Add New Restaurant</h3>
 
         <input type="text" name="name" id="restaurant-name" placeholder="Name" required></input>
-        <!-- <br><br> -->
         <input type="text" name="nationality" id="restaurant-nationality" placeholder="Nationality" required></input>
         <br><br>
         <input type="integer" name="rating" id="restaurant-rating" min="1" max="10" placeholder="Rating 1-10" required></input>
-        <!-- <br>
-        <br> -->
+        
 
           <select id="cityRestaurant">
             <option value="1">New York City</option>

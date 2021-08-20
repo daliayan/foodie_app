@@ -1,3 +1,4 @@
+/* Website Background Styling */
 html {
     background: linear-gradient(200deg, rgb(246, 241, 179), rgb(141, 139, 168));
     background-attachment: fixed;
@@ -5,6 +6,7 @@ html {
     min-height: 100%;
 }
 
+/* Body of Website Styling */
 body {
 	display: block;
     justify-content: center;
@@ -12,23 +14,45 @@ body {
 	padding-left: 40px;
 	padding-right: 40px; 
 	padding-top: 10px;
-  }
-
-#main{
-	height:2500px;
-	background-color:#f3eabc;
-	margin:10px;
-	padding:10px;
+	margin:5px;
 }
 
-	
-.content{
+/* Header Styling */
+.header {
+	padding: 1px;
+	text-align: center;
+	background: #fcfffe;
+	font-size: 30px;
+}
+
+/* Image Logo Styling */
+.img{
+	float: left;
+	padding: 15px; 
+}
+
+/* Restaurant List Styling */
+li {
+	list-style-type: none; /* Remove bullets */
+	margin-top: 15px;
+	margin: 5; /* Remove margins */
+	font-size: 18px;
+	font-family: "Brush Script MT", cursive;
+}
+
+/* #main{
+	height:2500px;
+	margin:10px;
+	padding:10px;
+} */
+
+/* .content{
 	height:300px;
 	background:#e7e6ec;
 	border-top:#cfc4d4 2px solid;
 	margin:0;
 	padding:0;
-}
+} */
 	
 /* footer{
 	height:50px;
@@ -37,9 +61,3 @@ body {
 	margin:0;
 	padding:0;
 }  */
-
-ul {
-	list-style-type: none; /* Remove bullets */
-	padding: 0; /* Remove padding */
-	margin: 0; /* Remove margins */
-}
