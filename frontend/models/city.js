@@ -62,5 +62,4 @@ class City {
             restaurantApi.getRestaurant(restaurantData.data);
         });
     }
-
 };
