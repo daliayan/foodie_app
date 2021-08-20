@@ -31,6 +31,14 @@ body {
 	padding: 15px; 
 }
 
+/* City List Styling */
+.cityList{
+	padding: 15px; 
+	font-size: 25px;
+	font-family:'Brush Script MT', cursive;
+
+}
+
 /* Restaurant List Styling */
 li {
 	list-style-type: none; /* Remove bullets */
@@ -38,6 +46,16 @@ li {
 	margin: 5; /* Remove margins */
 	font-size: 18px;
 	font-family: "Brush Script MT", cursive;
+}
+
+/* Styling my Buttons */
+button{
+
+	background-color: #ebecf3; 
+	text-align: center;
+	color: rgb(0, 0, 0);
+	margin: 4px 6px;
+	cursor: pointer;
 }
 
 /* #main{
