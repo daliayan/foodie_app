@@ -53,7 +53,7 @@ class City {
     // getting the values of nationality/rating for restaurant upon click
     getRestaurantContent(){
 
-        const restaurantData = document.getElementByTagName('ul');
+        const restaurantData = document.getElementByClassName('restaurants');
         // const restaurantDiv = document.createElement('div');
          
         // restaurantData.appendChild(restaurantUl)
