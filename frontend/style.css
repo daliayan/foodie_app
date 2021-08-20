@@ -36,7 +36,6 @@ body {
 .city-list{
 	padding: 10px; 
 	font-size: 25px;
-	/* font-family:'Brush Script MT', cursive; */
 	font-family: Tahoma;
 	width: 320px;
 
@@ -46,7 +45,7 @@ body {
 li {
 	list-style-type: none; /* Remove bullets */
 	margin-top: 10px;
-	margin: 5; /* Remove margins */
+	margin: 2; /* Remove margins */
 	font-size: 18px;
 	font-family: Tahoma,
 }

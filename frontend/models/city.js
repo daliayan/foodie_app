@@ -19,6 +19,7 @@ class City {
         cityDiv.appendChild(cityInfo);
         cityList.appendChild(cityDiv);
         cityList.appendChild(restaurants);
+        // append child returns the appended child of a parent node
         
     };
 
