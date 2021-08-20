@@ -3,7 +3,8 @@
 This Ruby on Rails backend, Javascript frontend project called Taste This City (Foodie on Github)!
 
 ## Description of the Application
-
+<!-- sdsdsdsd -->
+<!-- sdsdsdsd -->
 
 ## Installation
 
@@ -37,3 +38,5 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/daliay
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Read & Watch More About My Experience Making This Application
+<!-- sdsdsdsd -->
+<!-- sdsdsdsd -->
