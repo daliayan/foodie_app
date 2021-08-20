@@ -25,7 +25,6 @@ class City {
         cityList.appendChild(cityDiv);
         cityList.appendChild(restaurants);
         // append child returns the appended child of a parent node
-        
     };
 
     // formatting my city data to be displayed

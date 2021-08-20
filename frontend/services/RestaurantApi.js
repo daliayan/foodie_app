@@ -9,7 +9,6 @@ class RestaurantApi {
         const config = {
             method: 'DELETE',
         };
-
         fetch(`${this.baseURL}/${id}`, config)
         .then(resp => resp.json())
         .then(json => alert(json.message))
@@ -53,15 +52,6 @@ class RestaurantApi {
             const appendedRes = newres.getRestaurant();
             city.appendChild(appendedRes);
             myForm.reset();
-
-            // restaurantApi.append(newres);
         });
-
-        // Need to append newres element to li in restaurantapi/restaurant
-        // restaurantApi.append(newres);
-        // restaurantLi.appendNode(newres);
-        // newres.appendChild(restaurantLi);
-        // need to append li newres element to li 
-        // restaurantLi.appendChild(newres);
     }
 }

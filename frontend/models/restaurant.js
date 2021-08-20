@@ -28,13 +28,7 @@ class Restaurant {
 
          restaurantLi.appendChild(deleteRes);
          // Adds a new child node to an element as the last child node
-         return restaurantLi;
-
-        // Need to append newres element to li in restaurantapi/restaurant
-        //  restaurantLi.appendChild(restaurantData);
-        //  restaurantLi.appendChild(newres);
-        // restaurantLi.appendChild(submitForm);
-        // restaurantLi.append(newres);
+        return restaurantLi;
      };
 
      // getting the values of nationality/rating for restaurant upon click
