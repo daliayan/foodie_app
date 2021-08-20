@@ -50,10 +50,11 @@ class RestaurantApi {
     .then(resp => resp.json())
     .then(json => {
         const newres = new Restaurant(json)
-
         newres.getRestaurant()
-        // restaurantLi.appendChild(newres);
         });
+
+        // restaurantLi.appendChild(newres);
+        // newres.appendChild(restaurantLi);
         // need to append li newres element to li 
         // restaurantLi.appendChild(newres);
     }

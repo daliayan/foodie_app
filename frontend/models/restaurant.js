@@ -31,10 +31,12 @@ class Restaurant {
          });
 
          restaurantLi.appendChild(deleteRes);
-        //  restaurantLi.appendChild(restaurantData);
-        //  restaurantLi.appendChild(newres);
-         // Need to append newres element to li in restaurantapi/restaurant
          return restaurantLi;
+
+         // Need to append newres element to li in restaurantapi/restaurant
+         //  restaurantLi.appendChild(restaurantData);
+        //  restaurantLi.appendChild(newres);
+        // restaurantLi.appendChild(submitForm);
      };
 
 }
