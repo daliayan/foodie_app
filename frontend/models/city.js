@@ -53,11 +53,12 @@ class City {
     // getting the values of nationality/rating for restaurant upon click
     getRestaurantContent(){
 
-        const restaurantData = document.getElementByTagName('li');
-        const restaurantDiv = document.createElement('div');
+        const restaurantData = document.getElementByTagName('ul');
+        // const restaurantDiv = document.createElement('div');
          
-        restaurantDiv.classList.add('li');
-        restaurantDiv.addEventListener('click', () => {
+        // restaurantData.appendChild(restaurantUl)
+        // restaurantData.classList.add('li');
+        restaurantData.addEventListener('click', () => {
             restaurantApi.getRestaurant(restaurantData.data);
         });
     }
