@@ -1,32 +1,7 @@
-## Models
--City -> has many restuarants
+TO DO'S
 
--Restuarants -> belongs to city
-
-## My Application Does
-
--Render all cities
--Show resaurants that belong to cities
--Form that adds restuarants to a city
--Delete a restaurant
-
-
-##
-
-MODELS
--list of cities seeded in DB --- FETCH -- READ
--   RENDER CITIES
--   RENDER CITY RESTUARANTS
--   RENDER ADD RESTAURANT FORM
-
--Show the restuarants for each city --FETCH
--Form to add restaurants for city  --FETCH
--delete a restuaruant --- DESTROY
-
-
-fetch city / 
-
-
-create/delete restaurants
-
-
+1. Need to render restaurant info and append the li element
+2. Need to render restaurant information in the webpage
+3. Need to make my website look like my inspo site
+4. Need to make my logo
+5. Paginate City/Restaurant Text
