@@ -15,6 +15,11 @@ class City {
 
         const cityInfo = this.getCityInfo();
         const restaurants = this.getCityRestaurants();
+        
+        // {    name: this.name,
+        //     rating: this.rating,
+        //     nationality: this.nationality,
+        // }
     
         cityDiv.appendChild(cityInfo);
         cityList.appendChild(cityDiv);

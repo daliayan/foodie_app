@@ -52,7 +52,9 @@ class RestaurantApi {
         const newres = new Restaurant(json)
 
         newres.getRestaurant()
+        // restaurantLi.appendChild(newres);
         });
         // need to append li newres element to li 
+        // restaurantLi.appendChild(newres);
     }
 }

@@ -16,6 +16,10 @@ class Restaurant {
          const restaurantLi = document.createElement('li');
          const deleteRes = document.createElement('button');
 
+        //  const restaurantData = document.getElementById('restaurant-data');
+        // const restaurantDiv = document.createElement('div');
+        //  restaurantDiv.classList.add(restaurant-data);
+
          restaurantLi.innerText = this.name;
 
          deleteRes.classList.add('delete-btn');
@@ -27,6 +31,8 @@ class Restaurant {
          });
 
          restaurantLi.appendChild(deleteRes);
+        //  restaurantLi.appendChild(restaurantData);
+        //  restaurantLi.appendChild(newres);
          // Need to append newres element to li in restaurantapi/restaurant
          return restaurantLi;
      };
