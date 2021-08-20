@@ -19,7 +19,7 @@ class RestaurantApi {
         
         event.preventDefault();
         console.log("form submitted")
-    
+        const myForm = document.getElementById('restaurant-form')
         const restaurantName = document.getElementById('restaurant-name')
         const restaurantNationality = document.getElementById('restaurant-nationality')
         const restaurantRating = document.getElementById('restaurant-rating')
@@ -49,9 +49,16 @@ class RestaurantApi {
         .then(resp => resp.json())
         .then(json => {
             const newres = new Restaurant(json)
-            newres.getRestaurant();
-            });
+            const city = document.getElementById(`city-${newres.cityId}`);
+            const appendedRes = newres.getRestaurant();
+            city.appendChild(appendedRes);
+            myForm.reset();
 
+            // restaurantApi.append(newres);
+        });
+
+        // Need to append newres element to li in restaurantapi/restaurant
+        // restaurantApi.append(newres);
         // restaurantLi.appendNode(newres);
         // newres.appendChild(restaurantLi);
         // need to append li newres element to li 

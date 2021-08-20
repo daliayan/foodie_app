@@ -39,6 +39,7 @@ class City {
     // extracting the restaurant data to display beneath my city data
     getCityRestaurants(){
         const restaurantUl = document.createElement('ul');
+        restaurantUl.id = `city-${this.id}`;
         restaurantUl.classList.add('restaurants');
         
         this.restaurants.forEach(restaurant => {
