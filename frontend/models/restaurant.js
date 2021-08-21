@@ -31,7 +31,7 @@ class Restaurant {
         return restaurantLi;
      };
 
-     // getting the values of nationality/rating for restaurant upon click
+    // getting the values of nationality/rating for restaurant upon click
     //  getRestaurantContent(){
 
     //     const restaurantData = document.getElementByTagName('li');
@@ -42,5 +42,4 @@ class Restaurant {
     //         restaurantApi.getRestaurant(restaurantData.data);
     //     });
     // }
-
 }

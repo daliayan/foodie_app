@@ -24,6 +24,7 @@ body {
 	text-align: center;
 	background: linear-gradient(200deg, rgb(243, 192, 125), rgb(241, 83, 55));
 	font-size: 20px;
+	font-family: Copperplate,Copperplate Gothic Light,fantasy; 
 }
 
 /* Image Logo Styling */
@@ -37,7 +38,7 @@ body {
 .city-list{
 	padding: 10px; 
 	font-size: 25px;
-	font-family: Tahoma;
+	font-family: Copperplate Gothic Light; 
 	width: 320px;
 }
 
@@ -47,7 +48,7 @@ li {
 	margin-top: 10px;
 	margin: 2; /* Remove margins */
 	font-size: 18px;
-	font-family: Tahoma,
+	font-family: Copperplate Gothic Light; 
 }
 
 /* Styling my Buttons */
@@ -73,12 +74,15 @@ button{
   border: none;
   border-radius: 40px;
   background-color: #f59c38;
+  font-family: Copperplate Gothic Light; 
+  font-size: 16px;
 }
 
 /* #main{
 	height:2500px;
 	margin:10px;
 	padding:10px;
+	font-family: Copperplate,Copperplate Gothic Light,fantasy;
 } */
 
 /* .content{

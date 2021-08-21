@@ -15,16 +15,15 @@ class City {
 
         const cityInfo = this.getCityInfo();
         const restaurants = this.getCityRestaurants();
+        // const restData = this.getRestaurantContent();
         
-        // {    name: this.name,
-        //     rating: this.rating,
-        //     nationality: this.nationality,
-        // }
-    
+      
+        // append child returns the appended child of a parent node
         cityDiv.appendChild(cityInfo);
         cityList.appendChild(cityDiv);
         cityList.appendChild(restaurants);
-        // append child returns the appended child of a parent node
+        // cityList.appendChild(restData);
+
     };
 
     // formatting my city data to be displayed
