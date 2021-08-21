@@ -23,13 +23,13 @@ body {
 	padding: 1px;
 	text-align: center;
 	background: linear-gradient(200deg, rgb(243, 192, 125), rgb(241, 83, 55));
-	font-size: 30px;
+	font-size: 20px;
 }
 
 /* Image Logo Styling */
 .img{
 	/* float: left; */
-	padding: 15px; 
+	padding: 10px; 
 	text-align: center;
 }
 
