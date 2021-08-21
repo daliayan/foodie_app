@@ -28,8 +28,9 @@ body {
 
 /* Image Logo Styling */
 .img{
-	float: left;
+	/* float: left; */
 	padding: 15px; 
+	text-align: center;
 }
 
 /* City List Styling */
