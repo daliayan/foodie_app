@@ -26,6 +26,7 @@ class Restaurant {
             // if (restaurantLi.id === this.click){
                restaurantLi.innerText = `Rating: ${this.rating}
                 Nationality: ${this.nationality}`;
+                return restaurantLi;
             //}
             // else {
             //     return restaurantLi;
