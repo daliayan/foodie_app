@@ -15,21 +15,18 @@ class City {
 
         const cityInfo = this.getCityInfo();
         const restaurants = this.getCityRestaurants();
-        // const restData = this.getRestaurantContent();
-        
       
         // append child returns the appended child of a parent node
         cityDiv.appendChild(cityInfo);
         cityList.appendChild(cityDiv);
         cityList.appendChild(restaurants);
-        // cityList.appendChild(restData);
 
     };
 
     // formatting my city data to be displayed
     getCityInfo(){
         const cityData = document.createElement('div');
-
+        
         cityData.innerHTML = `${this.name}`; 
         return cityData;
     }
@@ -53,10 +50,10 @@ class City {
     getRestaurantContent(){
 
         const restaurantData = document.getElementByClassName('restaurants');
-        // const restaurantDiv = document.createElement('div');
+        const restaurantDiv = document.createElement('div');
          
-        // restaurantData.appendChild(restaurantUl)
-        // restaurantData.classList.add('li');
+        restaurantData.appendChild(restaurantUl)
+        restaurantData.classList.add('li');
         
     }
 };

@@ -18,9 +18,7 @@ class Restaurant {
 
          restaurantLi.innerText = this.name;
          restaurantLi.addEventListener('click', () => {
-             console.log('clicked');
-            // restaurantLi.rating;
-            // restaurantLi.nationality;
+            console.log(`${this.rating}, ${this.nationality}`)
             });
 
          deleteRes.classList.add('delete-btn');
