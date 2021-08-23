@@ -26,7 +26,6 @@ class RestaurantApi {
     
         // making a params hash to dictate the info the user can submit
         // object with key value pairs
-    
         const formData = {
             name: restaurantName.value, 
             nationality: restaurantNationality.value, 
