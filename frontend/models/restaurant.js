@@ -15,10 +15,23 @@ class Restaurant {
      getRestaurant(){
          const restaurantLi = document.createElement('li');
          const deleteRes = document.createElement('button');
+        //  const restaurantData = document.getElementByClassName('restaurants');
+
 
          restaurantLi.innerText = this.name;
+         restaurantLi.classList.add('restaurant-data')
+
          restaurantLi.addEventListener('click', () => {
-            console.log(`${this.rating}, ${this.nationality}`)
+            if (restaurantLi.id === this.click){
+                `<p> Restaurant Rating: ${this.rating}</p>
+                <p>Restaurant Nationality: ${this.nationality}</p>`;}
+            else {
+                return restaurantLi;
+            };
+
+            // restaurantLi.innerHTML = `<p> Restaurant Rating: ${this.rating}</p>
+            //  <p>Restaurant Nationality: ${this.nationality}</p>`;
+            // console.log(`${this.rating}, ${this.nationality}`)
             });
 
          deleteRes.classList.add('delete-btn');

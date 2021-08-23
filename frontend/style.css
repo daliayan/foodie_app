@@ -36,7 +36,7 @@ body {
 /* City List Styling */
 .city-list{
 	padding: 10px; 
-	font-size: 25px;
+	font-size: 30px;
 	font-family: Copperplate Gothic Light; 
 	width: 320px;
 }
@@ -44,9 +44,9 @@ body {
 /* Restaurant List Styling */
 li {
 	list-style-type: none; /* Remove bullets */
-	margin-top: 10px;
+	margin-top: 15px;
 	margin: 2; /* Remove margins */
-	font-size: 18px;
+	font-size: 22px;
 	font-family: Copperplate Gothic Light; 
 }
 
@@ -65,6 +65,8 @@ button{
 	background: linear-gradient(200deg, rgb(243, 192, 125), rgb(241, 83, 55), rgb(243, 192, 125));
 	text-align: center;
 	margin-top: 5px;
+	/* font-family: Copperplate Gothic Light; 
+  	font-size: 16px; */
 }
 
 /* styling the city dropdown */

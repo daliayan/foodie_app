@@ -48,12 +48,10 @@ class City {
 
     // getting the values of nationality/rating for restaurant upon click
     getRestaurantContent(){
-
-        const restaurantData = document.getElementByClassName('restaurants');
-        const restaurantDiv = document.createElement('div');
+        // const restaurantData = document.getElementByClassName('restaurants');
+        // const restaurantDiv = document.createElement('div');
          
-        restaurantData.appendChild(restaurantUl)
-        restaurantData.classList.add('li');
-        
+        // restaurantData.appendChild(restaurantUl)
+        // restaurantData.classList.add('li');
     }
 };
