@@ -57,8 +57,6 @@ class City {
          
         // restaurantData.appendChild(restaurantUl)
         // restaurantData.classList.add('li');
-        restaurantData.addEventListener('click', () => {
-            restaurantApi.getRestaurant(restaurantData.data);
-        });
+        
     }
 };

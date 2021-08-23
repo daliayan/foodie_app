@@ -17,6 +17,11 @@ class Restaurant {
          const deleteRes = document.createElement('button');
 
          restaurantLi.innerText = this.name;
+         restaurantLi.addEventListener('click', () => {
+             console.log('clicked');
+            // restaurantLi.rating;
+            // restaurantLi.nationality;
+            });
 
          deleteRes.classList.add('delete-btn');
          deleteRes.innerText = 'x';
@@ -30,16 +35,4 @@ class Restaurant {
          // Adds a new child node to an element as the last child node
         return restaurantLi;
      };
-
-    // getting the values of nationality/rating for restaurant upon click
-    //  getRestaurantContent(){
-
-    //     const restaurantData = document.getElementByTagName('li');
-    //     const restaurantDiv = document.createElement('div');
-         
-    //     restaurantDiv.classList.add('li');
-    //     restaurantDiv.addEventListener('click', () => {
-    //         restaurantApi.getRestaurant(restaurantData.data);
-    //     });
-    // }
 }
