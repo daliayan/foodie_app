@@ -19,29 +19,29 @@ class Restaurant {
 
 
          restaurantLi.innerText = this.name;
-         restaurantLi.classList.add('restaurant-data');
+         restaurantLi.classList.add('restaurant-data', 'restaurant-addition');
 
           // getting the values of nationality/rating for restaurant upon click
         restaurantLi.addEventListener('click', () => {
-            if (restaurantLi.id === this.click){
-               debugger
-               restaurantLi.innerText = `Rating: ${this.rating}
-                Nationality: ${this.nationality}`;
+            const restdata = document.createElement('div');
+
+            if (restaurantLi.getElementsByClassName('restaurant-addition')){
+                console.log('clicked');
+                restaurantLi.innerText = `Rating: ${this.rating} 
+                    Nationality: ${this.nationality}`;
+                
+                // restaurantLi.appendChild(restdata);
+            //    debugger
+                // restaurantLi.appendChild(restdata);
                 // debugger
+            } else {
+                // debugger
+                // restaurantLi.appendChild(restdata);
+                debugger
+                restaurantLi.appendChild(restdata);
+                return restaurantLi;
             }
-            else {
-                return
-                //  restaurantLi;
-            };
-
-            // restaurantLi.innerText = `Rating: ${this.rating}
-            //     Nationality: ${this.nationality}`;
-            //     return restaurantLi;
-
-            // restaurantLi.innerHTML = `<p> Restaurant Rating: ${this.rating}</p>
-            //  <p>Restaurant Nationality: ${this.nationality}</p>`;
-            // console.log(`${this.rating}, ${this.nationality}`)
-        });
+         });
 
          deleteRes.classList.add('delete-btn');
          deleteRes.innerText = 'x';
