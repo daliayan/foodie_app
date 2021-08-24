@@ -35,7 +35,7 @@ class Restaurant {
             // restaurantLi.innerHTML = `<p> Restaurant Rating: ${this.rating}</p>
             //  <p>Restaurant Nationality: ${this.nationality}</p>`;
             // console.log(`${this.rating}, ${this.nationality}`)
-            });
+        });
 
          deleteRes.classList.add('delete-btn');
          deleteRes.innerText = 'x';
