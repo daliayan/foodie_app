@@ -16,6 +16,7 @@ body {
 	padding-right: 40px; 
 	padding-top: 10px;
 	margin:5px;
+	
 }
 
 /* Header Styling */
@@ -25,14 +26,21 @@ body {
 	background: linear-gradient(200deg, rgb(243, 192, 125), rgb(241, 83, 55), rgb(243, 192, 125));
 	font-size: 20px;
 	font-family: Copperplate,Copperplate Gothic Light,fantasy; 
+	margin: auto;
 }
 
 /* Image Logo Styling */
-.img{
+.header-img{
 	/* float: left; */
 	padding: 10px; 
 	text-align: center;
 }
+
+.travel-imgs{
+	text-decoration: left;
+}
+
+
 
 /* City List Styling */
 .city-list{
@@ -43,16 +51,20 @@ body {
 	box-shadow:  4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	border-radius: 5px;
+	/* align-items: center; */
+	margin: auto;
+	font-weight: bold;
 }
 
   /* On mouse-over, add a deeper shadow */
 .city-list:hover {
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	box-shadow: 18px 20px  rgba(255, 0, 0, 0.2);
 }
   
   /* Add some padding inside the card container */
 .container {
-	padding: 2px 16px;
+	padding: 16px;
+	
 }
 
 /* Restaurant List Styling */
@@ -62,6 +74,7 @@ li {
 	margin: 2; /* Remove margins */
 	font-size: 22px;
 	font-family: Copperplate Gothic Light; 
+	font-weight: normal;
 }
 
 /* Styling my Buttons */
@@ -79,6 +92,7 @@ button{
 	background: linear-gradient(200deg, rgb(243, 192, 125), rgb(241, 83, 55), rgb(243, 192, 125));
 	text-align: center;
 	margin-top: 5px;
+	margin: auto;
 	/* font-family: Copperplate Gothic Light; 
   	font-size: 16px; */
 }
