@@ -27,10 +27,9 @@ class Restaurant {
             const restdata = document.createElement('div');
             restdata.classList.add('data-click')
 
-            if (restaurantLi.click){
+            if (restaurantLi.classList.contains('restaurant-addition')){
                 console.log("connected click")
-
-                // restaurantLi.getElementsByClassName('restaurant-addition')
+                restaurantLi.classList.remove('restaurant-addition')
 
                 restdata.innerText = `Rating: ${this.rating} 
                     Nationality: ${this.nationality}`;
@@ -38,17 +37,11 @@ class Restaurant {
                 restaurantLi.appendChild(restdata);
                 return restaurantLi;
             } else {
-                console.log('error')
-                // restaurantLi.appendChild(restdata);
-                // return restaurantLi;
+                restaurantLi.classList.add('restaurant-addition')
+                console.log("hihihihih")
+                restaurantLi.removeChild(restdata);
+                return restaurantLi;
             }
-
-            // // restaurantLi.getElementsByClassName('restaurant-addition')
-            // console.log('clicked');
-            // restaurantLi.getElementsByClassName('restaurant-addition')
-            // restaurantLi.appendChild(restdata);
-            // return restaurantLi;
-            // if (restaurantLi.getElementsByClassName('restaurant-addition')){
         });
 
          deleteRes.classList.add('delete-btn');
