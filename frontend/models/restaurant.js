@@ -22,15 +22,21 @@ class Restaurant {
          restaurantLi.classList.add('restaurant-data');
 
           // getting the values of nationality/rating for restaurant upon click
-         restaurantLi.addEventListener('click', () => {
-            // if (restaurantLi.id === this.click){
+        restaurantLi.addEventListener('click', () => {
+            if (restaurantLi.id === this.click){
+               debugger
                restaurantLi.innerText = `Rating: ${this.rating}
                 Nationality: ${this.nationality}`;
-                return restaurantLi;
-            //}
-            // else {
+                // debugger
+            }
+            else {
+                return
+                //  restaurantLi;
+            };
+
+            // restaurantLi.innerText = `Rating: ${this.rating}
+            //     Nationality: ${this.nationality}`;
             //     return restaurantLi;
-            // };
 
             // restaurantLi.innerHTML = `<p> Restaurant Rating: ${this.rating}</p>
             //  <p>Restaurant Nationality: ${this.nationality}</p>`;
