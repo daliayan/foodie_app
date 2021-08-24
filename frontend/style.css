@@ -39,6 +39,8 @@ body {
 .travel-imgs{
 	text-decoration: left;
 	border-radius: 50%;
+	position: relative;
+  	display: inline-block;
 }
 
 /* City List Styling */

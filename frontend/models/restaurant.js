@@ -21,27 +21,36 @@ class Restaurant {
          restaurantLi.innerText = this.name;
          restaurantLi.classList.add('restaurant-data', 'restaurant-addition');
 
-          // getting the values of nationality/rating for restaurant upon click
+        // getting the values of nationality/rating for restaurant upon click
         restaurantLi.addEventListener('click', () => {
-            const restdata = document.createElement('div');
 
-            if (restaurantLi.getElementsByClassName('restaurant-addition')){
-                console.log('clicked');
-                restaurantLi.innerText = `Rating: ${this.rating} 
+            const restdata = document.createElement('div');
+            restdata.classList.add('data-click')
+
+            if (restaurantLi.click){
+                console.log("connected click")
+                // restaurantLi.getElementsByClassName('restaurant-addition')
+                restdata.innerText = `Rating: ${this.rating} 
                     Nationality: ${this.nationality}`;
-                
-                // restaurantLi.appendChild(restdata);
-            //    debugger
-                // restaurantLi.appendChild(restdata);
-                // debugger
-            } else {
-                // debugger
-                // restaurantLi.appendChild(restdata);
-                debugger
+
                 restaurantLi.appendChild(restdata);
                 return restaurantLi;
+            } else {
+                console.log('false!!!')
+                // restaurantLi.appendChild(restdata);
+                // return restaurantLi;
             }
-         });
+
+            // // restaurantLi.getElementsByClassName('restaurant-addition')
+            // console.log('clicked');
+
+            // restaurantLi.getElementsByClassName('restaurant-addition')
+
+            // restaurantLi.appendChild(restdata);
+            // return restaurantLi;
+
+            // if (restaurantLi.getElementsByClassName('restaurant-addition')){
+        });
 
          deleteRes.classList.add('delete-btn');
          deleteRes.innerText = 'x';
