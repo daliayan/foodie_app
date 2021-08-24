@@ -29,26 +29,25 @@ class Restaurant {
 
             if (restaurantLi.click){
                 console.log("connected click")
+
                 // restaurantLi.getElementsByClassName('restaurant-addition')
+
                 restdata.innerText = `Rating: ${this.rating} 
                     Nationality: ${this.nationality}`;
 
                 restaurantLi.appendChild(restdata);
                 return restaurantLi;
             } else {
-                console.log('false!!!')
+                console.log('error')
                 // restaurantLi.appendChild(restdata);
                 // return restaurantLi;
             }
 
             // // restaurantLi.getElementsByClassName('restaurant-addition')
             // console.log('clicked');
-
             // restaurantLi.getElementsByClassName('restaurant-addition')
-
             // restaurantLi.appendChild(restdata);
             // return restaurantLi;
-
             // if (restaurantLi.getElementsByClassName('restaurant-addition')){
         });
 
