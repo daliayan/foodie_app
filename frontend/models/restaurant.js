@@ -15,33 +15,29 @@ class Restaurant {
      getRestaurant(){
          const restaurantLi = document.createElement('li');
          const deleteRes = document.createElement('button');
-        //  const restaurantData = document.getElementByClassName('restaurants');
-
-
+        
          restaurantLi.innerText = this.name;
          restaurantLi.classList.add('restaurant-data', 'restaurant-addition');
+
+         const restdata = document.createElement('div');
+         restdata.classList.add('hidden');
+
+            restdata.innerText = `Rating: ${this.rating} 
+                    Nationality: ${this.nationality}`;
+
+            restaurantLi.appendChild(restdata);
 
         // getting the values of nationality/rating for restaurant upon click
         restaurantLi.addEventListener('click', () => {
 
-            const restdata = document.createElement('div');
-            restdata.classList.add('data-click')
-
-            if (restaurantLi.classList.contains('restaurant-addition')){
+            if (restdata.classList.contains('hidden')){
                 console.log("connected click")
-                restaurantLi.classList.remove('restaurant-addition')
-
-                restdata.innerText = `Rating: ${this.rating} 
-                    Nationality: ${this.nationality}`;
-
-                restaurantLi.appendChild(restdata);
-                return restaurantLi;
+                restdata.classList.remove('hidden')
             } else {
-                restaurantLi.classList.add('restaurant-addition')
-                console.log("hihihihih")
-                restaurantLi.removeChild(restdata);
-                return restaurantLi;
+                restdata.classList.add('hidden');
+                console.log("REMOVED");
             }
+             return restaurantLi;
         });
 
          deleteRes.classList.add('delete-btn');

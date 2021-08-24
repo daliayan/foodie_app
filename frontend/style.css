@@ -66,6 +66,12 @@ body {
 	padding: 16px;	
 }
 
+/* REstaurant data */
+.hidden {
+	display: none;
+
+}
+
 /* Restaurant List Styling */
 li {
 	list-style-type: none; /* Remove bullets */
