@@ -23,14 +23,13 @@ class Restaurant {
          restdata.className = "hidden-restaurant-data";
          restdata.classList.add('hidden');
 
-            restdata.innerText = `Rating: ${this.rating} 
-                    Nationality: ${this.nationality}`;
+        restdata.innerText = `Rating: ${this.rating} 
+                Nationality: ${this.nationality}`;
 
-            restaurantLi.appendChild(restdata);
+        restaurantLi.appendChild(restdata);
 
         // getting the values of nationality/rating for restaurant upon click
         restaurantLi.addEventListener('click', () => {
-
             if (restdata.classList.contains('hidden')){
                 console.log("connected click")
                 restdata.classList.remove('hidden')
