@@ -69,7 +69,10 @@ body {
 /* REstaurant data */
 .hidden {
 	display: none;
+}
 
+.restdata{
+	
 }
 
 /* Restaurant List Styling */

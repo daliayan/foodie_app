@@ -35,7 +35,7 @@ class Restaurant {
                 restdata.classList.remove('hidden')
             } else {
                 restdata.classList.add('hidden');
-                console.log("REMOVED");
+                console.log("HIDDEN");
             }
              return restaurantLi;
         });
@@ -43,6 +43,7 @@ class Restaurant {
          deleteRes.classList.add('delete-btn');
          deleteRes.innerText = 'x';
 
+        // the ability to delete a restaurant upon click
          deleteRes.addEventListener('click', () => {
              restaurantApi.deleteRestaurant(this.id);
              restaurantLi.remove();
