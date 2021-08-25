@@ -20,6 +20,7 @@ class Restaurant {
          restaurantLi.classList.add('restaurant-data', 'restaurant-addition');
 
          const restdata = document.createElement('div');
+         restdata.className = "hidden-restaurant-data";
          restdata.classList.add('hidden');
 
             restdata.innerText = `Rating: ${this.rating} 

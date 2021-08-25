@@ -48,7 +48,7 @@ body {
 	padding: 10px; 
 	font-size: 30px;
 	font-family: Copperplate Gothic Light; 
-	width: 320px;
+	width: 400px;
 	box-shadow:  4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	border-radius: 5px;
@@ -71,8 +71,11 @@ body {
 	display: none;
 }
 
-.restdata{
-	
+.hidden-restaurant-data{
+	font-size: 18px;
+	margin-top: 10px;
+	/* border-radius: 5px; */
+	padding: 10px;
 }
 
 /* Restaurant List Styling */
