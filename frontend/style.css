@@ -87,9 +87,9 @@ li {
 	font-weight: normal;
 }
 
-/* Styling my Buttons */
+/* Styling delete Buttons */
 button{
-	background-color: #ebecf3; 
+	background-color: #f80707;  
 	text-align: center;
 	color: rgb(0, 0, 0);
 	margin: 4px 6px;
@@ -103,6 +103,15 @@ button{
 	text-align: center;
 	margin-top: 5px;
 	margin: auto;
+}
+
+/* Styling Form Submit Buttons */
+.form-button{
+	background-color: #ece4e4; 
+	text-align: center;
+	color: rgb(0, 0, 0);
+	margin: 4px 6px;
+	cursor: pointer;
 }
 
 /* styling the city dropdown */
